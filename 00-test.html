@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div id="div1" style="width: 300px; height: 300px; border: 1px solid #000">
+    <div id="div2" style="width: 200px; height: 200px; border: 1px solid #000">
+        <div id="div3" style="width: 100px; height: 100px; border: 1px solid #000"></div>
+    </div>
+</div>
+</body>
+<script>
+  console.log(window)
+    let div1 = document.getElementById('div1')
+    let div2 = document.getElementById('div2')
+    let div3 = document.getElementById('div3')
+    div1.addEventListener("click", () => {
+      alert(1)
+    })
+    div2.addEventListener("click", () => {
+      alert(2)
+    })
+    div3.addEventListener("click", (event) => {
+      alert(3)
+      event.stopPropagation()
+    })
+</script>
+</html>

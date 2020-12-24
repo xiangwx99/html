@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+<!--    <meta name="viewport" content="width=device-width,initial-sacle=0.5">-->
+</head>
+<body>
+    <div style="width: 800px; margin: 100px auto">
+        <div>
+            <span>1px的线</span>
+            <div style="border: 1px solid red; border-width: 1px 0px 0px; line-height: 44px">1px</div>
+            <span>直接设置border为0.5px的线(不同的浏览器会有不同的表现)</span>
+            <div style="border: 0.5px solid red; border-width: 1px 0px 0px; line-height: 44px">0.5px</div>
+            <span>使用scale(直接使用会很模糊,要和transform-origin: 50% 100%;一起使用)</span>
+            <div style="height: 1px; background-color: red; transform: scaleY(.5); transform-origin: 50% 100%;">1px</div>
+            <span style="margin-top: 20px; display: inline-block">使用线性渐变linear-gradient</span>
+            <div style="height: 1px; background: linear-gradient(0deg, #fff, red);">0.5px</div>
+            <span style="margin-top: 30px; display: inline-block">使用boxshadow</span>
+            <div style="height: 1px; box-shadow: 0 .5px red"></div>
+        </div>
+    </div>
+</body>
+</html>
