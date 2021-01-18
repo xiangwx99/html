@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .triangle {
+            border-width: 50px;
+            border-style: solid;
+            border-top-color: transparent;
+            border-right-color: transparent;
+            border-left-color: transparent;
+            /*transform: rotate(90deg);*/
+        }
+        .arc {
+            border-width: 50px;
+            border-style: solid;
+            background-color: skyblue;
+            border-radius: 50%;
+            border-top-color: transparent;
+            border-right-color: transparent;
+            border-left-color: transparent;
+        }
+        .inside {
+            top: -50px;
+            left: -50px;
+            border-width: 50px;
+            border-style: solid;
+            /*background-color: pink;*/
+            border-radius: 50%;
+            border-top-color: transparent;
+            border-right-color: transparent;
+            border-left-color: transparent;
+            border-bottom-color: white;
+            transform: rotate(100deg);
+        }
+    </style>
+</head>
+<body>
+    <div style="width: 1100px; margin: 0 auto">
+        <div style="width: 0px;" class="triangle"></div>
+        <div style="margin-top: 20px; width: 0; position: relative" class="arc">
+            <div style="position: absolute" class="inside"></div>
+        </div>
+    </div>
+</body>
+</html>
